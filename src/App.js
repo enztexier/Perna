@@ -47,6 +47,30 @@ class Glow {
           this.sinVal = Math.random();
       }
 
+      animate(src, stageWidth, stageHeight) {
+          this.sinVal += 0.01;
+
+          this.radius += Math.sin(this.sinVal);
+
+          this.x += this.vx;
+          this.y += this.vy;
+
+          if (this.x < 0) {
+              this.vx *= -1;
+              this.x += 10;
+          } else if (this.x > stageWidth){
+              this.vx *= -1;
+              this.x -= 10;
+          }
+
+          if (this.y < 0) {
+              this.vy *= -1;
+              this.y += 10;
+          } else if (this.y > stageHeight){
+              this.vy *= -1;
+              this.y -= 10;
+          }
+
 
 }
 
