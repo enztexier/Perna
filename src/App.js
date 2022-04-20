@@ -35,41 +35,55 @@ function App() {
 */
 
 class Glow {
-      constructor(x, y, radius, rgb) {
-          this.x = x;
-          this.y = y;
-          this.radius = radius;
-          this.rgb = rgb;
+    constructor(x, y, radius, rgb) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.rgb = rgb;
 
-          this.vx = Math.random() * 4;
-          this.vy = Math.random() * 4;
+        this.vx = Math.random() * 4;
+        this.vy = Math.random() * 4;
 
-          this.sinVal = Math.random();
-      }
+        this.sinVal = Math.random();
+    }
 
-      animate(src, stageWidth, stageHeight) {
-          this.sinVal += 0.01;
+    animate(src, stageWidth, stageHeight) {
+        this.sinVal += 0.01;
 
-          this.radius += Math.sin(this.sinVal);
+        this.radius += Math.sin(this.sinVal);
 
-          this.x += this.vx;
-          this.y += this.vy;
+        this.x += this.vx;
+        this.y += this.vy;
 
-          if (this.x < 0) {
-              this.vx *= -1;
-              this.x += 10;
-          } else if (this.x > stageWidth){
-              this.vx *= -1;
-              this.x -= 10;
-          }
+        if (this.x < 0) {
+            this.vx *= -1;
+            this.x += 10;
+        } else if (this.x > stageWidth){
+            this.vx *= -1;
+            this.x -= 10;
+        }
 
-          if (this.y < 0) {
-              this.vy *= -1;
-              this.y += 10;
-          } else if (this.y > stageHeight){
-              this.vy *= -1;
-              this.y -= 10;
-          }
+        if (this.y < 0) {
+            this.vy *= -1;
+            this.y += 10;
+        } else if (this.y > stageHeight){
+            this.vy *= -1;
+            this.y -= 10;
+        }
+
+        src.beginPath();
+        const g = src.createRadialGradient(
+            this.x, this.y, this.radius * 0.01,
+            this.x, this.y, this.radius
+        );
+        g.addColorStop(0, `rgba(${this.rgb.r}, ${this.rgb.g}, ${this.rgb.b}, 1`);
+        g.addColorStop(1, `rgba(${this.rgb.r}, ${this.rgb.g}, ${this.rgb.b}, 0`);
+        src.fillStyle = g;
+        //src.fillStyle = `rgba(${this.rgb.r}, ${this.rgb.g}, ${this.rgb.b}, 1`;
+        src.arc(this.x, this.y, this.radius, 0, MathPI, false);
+        src.fill();
+    }
+}
 
 
 }
