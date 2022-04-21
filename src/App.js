@@ -94,7 +94,15 @@ class Engine{
 
           this.pixelRatio =  (window.decivePixelRatio > 1) ? 2 : 1;
 
+          this.totalConfettis = 12;
+          this.confettis = [];
+          this.maxRadius = 800;
+          this.minRadius = 300;
 
+          window.addEventListener('resize', this.resize.bind(this), false);
+          this.resize();
+
+          window.requestAnimationFrame(this.animate.bind(this));
       }
 
 
