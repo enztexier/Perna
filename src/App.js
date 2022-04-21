@@ -33,6 +33,7 @@ function App() {
       {r: 255, g: 153, b: 255},
   ];
 */
+const MathPI = Math.PI * 2;
 
 class Glow {
     constructor(x, y, radius, rgb) {
@@ -84,6 +85,17 @@ class Glow {
         src.fill();
     }
 }
+
+class Engine{
+      constructor(){
+          this.canvas = document.createElement('canvas');
+          document.body.appendChild(this.canvas);
+          this.src =  this.canvas.getContext('2d');
+
+          this.pixelRatio =  (window.decivePixelRatio > 1) ? 2 : 1;
+
+
+      }
 
 
 }
