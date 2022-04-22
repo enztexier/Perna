@@ -4,6 +4,7 @@ function App() {
 
   /*
   // BLEU
+  // need other or choose
   const COLORS = [
       {r: 51, g: 153, b: 255},
       {r: 153, g: 51, b: 255},
