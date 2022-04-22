@@ -159,7 +159,16 @@ function App() {
       }
     }
 
+    animate() {
+      window.requestAnimationFrame(this.animate.bind(this));
 
+      this.src.clearRect(0, 0, this.stageWidth, this.stageHeight);
+
+      for (let i = 0; i < this.totalConfettis; i++) {
+        const item = this.confettis[i];
+        item.animate(this.src, this.stageWidth, this.stageHeight);
+      }
+    }
   }
 
   new Engine();
