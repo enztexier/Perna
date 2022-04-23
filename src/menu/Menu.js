@@ -15,7 +15,7 @@ function Menu() {
     	<main>
     		<div class="left"></div>
     		<div class="middle">
-    	
+
     		</div>
     		<div class="right"></div>
     	</main>
