@@ -4,10 +4,10 @@ import Gradient from './gradient/Gradient';
 
 function App() {
   return (
-		<div>
-			<Menu/>
-			<Gradient/>
-		</div>
+	<div>
+		<Menu/>
+		<Gradient/>
+	</div>
 	)
 }
 
