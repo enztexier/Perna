@@ -8,6 +8,7 @@ header {
   flex: 0 0 10vh;
   border-bottom: solid;
   border-width: 5px;
+  Z-index:1;
 }
 
 main {
