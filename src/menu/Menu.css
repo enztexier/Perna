@@ -14,18 +14,21 @@ header {
 main {
   flex: 1;
   display: flex;
+z-index: 1;
 }
 
 footer {
   flex: 0 0 10vh;
   border-top: solid;
   border-width: 5px;
+z-index: 1;
 }
 
 .right {
   flex: 0 2 10vh;
   border-left: solid;
   border-width: 5px;
+z-index: 1;
 }
 
 .whiteboard {
