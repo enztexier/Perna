@@ -13,7 +13,7 @@ function Gradient() {
   ];
 */
 
-  // MULTI
+/*
   const COLORS = [{
       r: 51,
       g: 153,
@@ -40,9 +40,9 @@ function Gradient() {
       b: 255
     },
   ];
+*/
 
 
-  /*
     // ORANGE
     const COLORS = [{
         r: 212,
@@ -70,7 +70,8 @@ function Gradient() {
         b: 255
       },
     ];
-  */
+
+
   const MathPI = Math.PI * 2;
 
   class Glow {

@@ -2,33 +2,37 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: yellow;
 }
 
 header {
   flex: 0 0 10vh;
   border-bottom: solid;
   border-width: 5px;
-  z-index:1;
+  z-index: 1;
+    border-color: white;
 }
 
 main {
   flex: 1;
   display: flex;
-z-index: 1;
+  z-index: 1;
 }
 
 footer {
   flex: 0 0 10vh;
   border-top: solid;
   border-width: 5px;
-z-index: 1;
+  z-index: 1;
+    border-color: white;
 }
 
 .right {
   flex: 0 2 10vh;
   border-left: solid;
   border-width: 5px;
-z-index: 1;
+  z-index: 1;
+    border-color: white;
 }
 
 .whiteboard {
@@ -36,6 +40,7 @@ z-index: 1;
   height: 100%;
   transition: 1s;
   transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  z-index: 1;
 }
 
 .whiteboard:hover {
@@ -43,16 +48,20 @@ z-index: 1;
   height: 100%;
   transition: 1s;
   transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  z-index: 1;
 }
 
 .left {
   flex: 0 2 10vh;
   border-right: solid;
   border-width: 5px;
+  z-index: 1;
+    border-color: white;
 }
 
 .middle {
   flex: 1 1 10vh;
+  z-index: 1;
 }
 
 #bottomleft {
@@ -61,6 +70,8 @@ z-index: 1;
   float: left;
   border-right: solid;
   border-width: 5px;
+  z-index: 1;
+    border-color: white;
 }
 
 #bottomright {
@@ -69,6 +80,8 @@ z-index: 1;
   float: right;
   border-left: solid;
   border-width: 5px;
+  z-index: 1;
+    border-color: white;
 }
 
 #topleft {
@@ -77,6 +90,8 @@ z-index: 1;
   float: left;
   border-right: solid;
   border-width: 5px;
+  z-index: 1;
+    border-color: white;
 }
 
 #topright {
@@ -85,4 +100,6 @@ z-index: 1;
   float: right;
   border-left: solid;
   border-width: 5px;
+  z-index: 1;
+    border-color: white;
 }

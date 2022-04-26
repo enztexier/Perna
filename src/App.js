@@ -5,8 +5,8 @@ import Gradient from './gradient/Gradient';
 function App() {
   return (
 	<div>
+  	<Gradient/>
 		<Menu/>
-		<Gradient/>
 	</div>
 	)
 }
