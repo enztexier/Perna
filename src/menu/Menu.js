@@ -8,6 +8,7 @@ function Menu() {
     		<div id="bottomleft">
     			<span></span>
     		</div>
+
     		<div id="bottomright">
     			<span></span>
     		</div>
@@ -15,6 +16,8 @@ function Menu() {
     	<main>
     		<div class="left"></div>
     		<div class="middle">
+				    		<div class="whiteboard">
+								</div>
 
     		</div>
     		<div class="right"></div>
