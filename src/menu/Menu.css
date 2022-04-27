@@ -27,15 +27,6 @@ footer {
   border-color: white;
 }
 
-.right {
-  flex: 0 2 10vh;
-  border-left: solid;
-  border-width: 5px;
-  z-index: 1;
-  border-color: white;
-
-
-}
 
 .topmiddle{
   width: 87.8%;
@@ -66,6 +57,14 @@ footer {
 .left {
   flex: 0 2 10vh;
   border-right: solid;
+  border-width: 5px;
+  z-index: 1;
+  border-color: white;
+}
+
+.right {
+  flex: 0 2 10vh;
+  border-left: solid;
   border-width: 5px;
   z-index: 1;
   border-color: white;

@@ -6,13 +6,13 @@ function Menu() {
     <body>
     	<header>
 
-    		<div id="bottomleft">
+    		<div id="topleft">
     			<span></span>
     		</div>
 
 
 
-    		<div id="bottomright">
+    		<div id="topright">
     			<span></span>
     		</div>
 
@@ -28,10 +28,10 @@ function Menu() {
     		<div class="right"></div>
     	</main>
     	<footer>
-    		<div id="topleft">
+    		<div id="bottomleft">
     			<span></span>
     		</div>
-    		<div id="topright">
+    		<div id="bottomright">
     			<span></span>
     		</div>
     	</footer>
