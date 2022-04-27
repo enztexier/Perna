@@ -5,19 +5,24 @@ function Menu() {
 
     <body>
     	<header>
+
     		<div id="bottomleft">
     			<span></span>
     		</div>
 
+
+
     		<div id="bottomright">
     			<span></span>
     		</div>
+
     	</header>
     	<main>
     		<div class="left"></div>
     		<div class="middle">
-				    		<div class="whiteboard">
-								</div>
+
+				<img src={require('./logoWhite.png')} />
+
 
     		</div>
     		<div class="right"></div>

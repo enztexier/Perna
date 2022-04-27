@@ -33,6 +33,17 @@ footer {
   border-width: 5px;
   z-index: 1;
   border-color: white;
+
+
+}
+
+.topmiddle{
+  width: 87.8%;
+  height: 10vh;
+  z-index: 1;
+  background-color: red;
+  float: left;
+
 }
 
 .whiteboard {
@@ -65,6 +76,14 @@ footer {
   z-index: 1;
 }
 
+.middle img{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #bottomleft {
   width: 10vh;
   height: 10vh;
@@ -73,6 +92,7 @@ footer {
   border-width: 5px;
   z-index: 1;
   border-color: white;
+
 }
 
 #bottomright {
