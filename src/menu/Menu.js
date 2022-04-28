@@ -10,8 +10,6 @@ function Menu() {
     			<span></span>
     		</div>
 
-
-
     		<div id="topright">
     			<span></span>
     		</div>
