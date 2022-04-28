@@ -18,10 +18,7 @@ function Menu() {
     	<main>
     		<div class="left"></div>
     		<div class="middle">
-
 				<img src={require('./logoWhite.png')} />
-
-
     		</div>
     		<div class="right"></div>
     	</main>
