@@ -13,7 +13,7 @@ function Gradient() {
   ];
 */
 
-/*
+
   const COLORS = [{
       r: 51,
       g: 153,
@@ -40,10 +40,10 @@ function Gradient() {
       b: 255
     },
   ];
-*/
 
 
-    // ORANGE
+  // ORANGE
+  /*
     const COLORS = [{
         r: 212,
         g: 96,
@@ -70,7 +70,7 @@ function Gradient() {
         b: 255
       },
     ];
-
+*/
 
   const MathPI = Math.PI * 2;
 
