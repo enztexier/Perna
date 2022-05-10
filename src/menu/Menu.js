@@ -1,5 +1,5 @@
 import './Menu.css'
-import './Whiteboard/Whiteboard.js'
+import './whiteboard/Whiteboard.js'
 
 function Menu() {
 	return (
