@@ -1,4 +1,5 @@
 import './Menu.css'
+import './Whiteboard/Whiteboard.js'
 
 function Menu() {
 	return (
@@ -16,7 +17,7 @@ function Menu() {
 
     	</header>
     	<main>
-    		<div class="left"></div>
+    		<div class="left" onClick={WhiteBoard}></div>
     		<div class="middle">
 				<img src={require('./logoWhite.png')} />
     		</div>
