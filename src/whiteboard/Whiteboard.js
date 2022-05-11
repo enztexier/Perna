@@ -1,13 +1,23 @@
 import './Whiteboard.css'
+import { useState } from "react";
 
 function Whiteboard(){
-console.log('white');
-alert('hello');
-    return(
-      <div class="whiteboard">
 
-      </div>
-    )
+    const [style, setStyle] = useState("whiteboard");
+
+    const changeStyle = () => {
+      setStyle("whiteboard2");
+    };
+
+    return (
+
+     <div className={style}>
+       <button className="button" onClick={changeStyle}>
+         Click me!
+       </button>
+     </div>
+ );
+
 
 }
 
