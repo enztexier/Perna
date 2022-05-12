@@ -6,23 +6,20 @@ function Menu() {
 
     <body>
     	<header>
-
     		<div id="topleft">
     			<span></span>
     		</div>
-
     		<div id="topright">
     			<span></span>
     		</div>
-
     	</header>
     	<main>
-    		<div class="left" onClick={Whiteboard}></div>
-    		<div class="middle">
+    		<div className="left" onClick={Whiteboard}></div>
+    		<div className="middle" >
 				<Whiteboard />
 
     		</div>
-    		<div class="right"></div>
+    		<div className="right"></div>
     	</main>
     	<footer>
     		<div id="bottomleft">
