@@ -21,7 +21,7 @@ function Menu() {
     		</div>
     	</header>
     	<main>
-    		<div className="left" onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
+    		<div className="left" categorie="" onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
 				</div>
     		<div className="middle" >
 				<div className={style}>
