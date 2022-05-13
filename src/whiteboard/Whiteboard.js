@@ -10,10 +10,8 @@ function Whiteboard(){
 
     return (
       <div className={style}>
-        <button className="button" onClick={changeStyle}>
-          Click me!
-        </button>
-        <button className="button" onClick={setStyle}>
+
+        <button className="button" onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
           Click me!
         </button>
       </div>
