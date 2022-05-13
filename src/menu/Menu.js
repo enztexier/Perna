@@ -1,11 +1,18 @@
 import './Menu.css'
-import Whiteboard from '../whiteboard/Whiteboard';
+import { useState } from "react";
+
 
 function Menu() {
+
+	const [style, setStyle] = useState("whiteboard");
+	const changeStyle = () => {
+		setStyle("whiteboard2");
+	};
+
 	return (
 
     <body>
-    	<header>
+    	<header onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
     		<div id="topleft">
     			<span></span>
     		</div>
@@ -14,14 +21,18 @@ function Menu() {
     		</div>
     	</header>
     	<main>
-    		<div className="left" onClick={Whiteboard}></div>
+    		<div className="left" onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
+				</div>
     		<div className="middle" >
-				<Whiteboard />
+				<div className={style}>
+
+	      </div>
 
     		</div>
-    		<div className="right"></div>
+    		<div className="right" onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
+				</div>
     	</main>
-    	<footer>
+    	<footer onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
     		<div id="bottomleft">
     			<span></span>
     		</div>
