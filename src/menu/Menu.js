@@ -16,6 +16,8 @@ function Menu() {
     		<div id="topleft">
     			<span></span>
     		</div>
+				<div id="topcenter">
+				</div>
     		<div id="topright">
     			<span></span>
     		</div>
@@ -25,9 +27,7 @@ function Menu() {
 				</div>
     		<div className="middle" >
 				<div className={style}>
-
 	      </div>
-
     		</div>
     		<div className="right" onClick={() => setStyle((style) => (style === "whiteboardright" ? "whiteboardrightend" : "whiteboardright"))}>
 				</div>
