@@ -12,7 +12,7 @@ function Menu() {
 	return (
 
     <body>
-    	<header onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
+    	<header onClick={() => setStyle((style) => (style === "whiteboardtop" ? "whiteboardtopend" : "whiteboardtop"))}>
     		<div id="topleft">
     			<span></span>
     		</div>
@@ -21,7 +21,7 @@ function Menu() {
     		</div>
     	</header>
     	<main>
-    		<div className="left" categorie="" onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
+    		<div className="left" categorie="" onClick={() => setStyle((style) => (style === "whiteboardleft" ? "whiteboardleftend" : "whiteboardleft"))}>
 				</div>
     		<div className="middle" >
 				<div className={style}>
@@ -29,7 +29,7 @@ function Menu() {
 	      </div>
 
     		</div>
-    		<div className="right" onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
+    		<div className="right" onClick={() => setStyle((style) => (style === "whiteboardright" ? "whiteboardrightend" : "whiteboardright"))}>
 				</div>
     	</main>
     	<footer onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
