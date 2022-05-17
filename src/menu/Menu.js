@@ -9,6 +9,11 @@ function Menu() {
 		setStyle("whiteboard2");
 	};
 
+	changeColor() {
+	const newColor = this.state.color == green ? yellow : green;
+	this.setState({ color: newColor });
+}
+
 	return (
 
     <body>
@@ -23,7 +28,11 @@ function Menu() {
     		</div>
     	</header>
     	<main>
-    		<div className="left" categorie="" onClick={() => setStyle((style) => (style === "whiteboardleft" ? "whiteboardleftend" : "whiteboardleft"))}>
+    		<div className="left" categorie="" onClick={() => setStyle((style) => (
+					if (style === "whiteboardleft") {
+						console.log("left");
+					}
+					style === "whiteboardleft" ? "whiteboardleftend" : "whiteboardleft"))}>
 				</div>
     		<div className="middle" >
 				<div className={style}>
