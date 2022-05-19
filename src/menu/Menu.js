@@ -1,58 +1,49 @@
+import React from 'react';
 import './Menu.css'
 import { useState } from "react";
 
 
-function Menu() {
+export class Menu extends React.Component {
+	constructor(props) {
+    super(props);
 
-	const [style, setStyle] = useState("whiteboard");
-	const changeStyle = () => {
-		setStyle("whiteboard2");
-	};
+  }
 
-	changeColor() {
-	const newColor = this.state.color == green ? yellow : green;
-	this.setState({ color: newColor });
-}
+  render() {
+		return (
+			<body>
+	    	<header >
+	    		<div id="topleft">
+	    			<span></span>
+	    		</div>
+					<div id="topcenter">
+					</div>
+	    		<div id="topright">
+	    			<span></span>
+	    		</div>
+	    	</header>
+	    	<main>
+	    		<div className="left" categorie="" >
+					</div>
+	    		<div className="middle" >
+					<div >
 
-	return (
-
-    <body>
-    	<header onClick={() => setStyle((style) => (style === "whiteboardtop" ? "whiteboardtopend" : "whiteboardtop"))}>
-    		<div id="topleft">
-    			<span></span>
-    		</div>
-				<div id="topcenter">
-				</div>
-    		<div id="topright">
-    			<span></span>
-    		</div>
-    	</header>
-    	<main>
-    		<div className="left" categorie="" onClick={() => setStyle((style) => (
-					if (style === "whiteboardleft") {
-						console.log("left");
-					}
-					style === "whiteboardleft" ? "whiteboardleftend" : "whiteboardleft"))}>
-				</div>
-    		<div className="middle" >
-				<div className={style}>
-	      </div>
-    		</div>
-    		<div className="right" onClick={() => setStyle((style) => (style === "whiteboardright" ? "whiteboardrightend" : "whiteboardright"))}>
-				</div>
-    	</main>
-    	<footer onClick={() => setStyle((style) => (style === "whiteboard" ? "whiteboard2" : "whiteboard"))}>
-    		<div id="bottomleft">
-    			<span></span>
-    		</div>
-    		<div id="bottomright">
-    			<span></span>
-    		</div>
-    	</footer>
-    </body>
-
-  )
-
+		      </div>
+	    		</div>
+	    		<div className="right" >
+					</div>
+	    	</main>
+	    	<footer >
+	    		<div id="bottomleft">
+	    			<span></span>
+	    		</div>
+	    		<div id="bottomright">
+	    			<span></span>
+	    		</div>
+	    	</footer>
+	    </body>
+);
+  }
 }
 
 export default Menu
