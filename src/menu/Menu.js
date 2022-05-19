@@ -11,8 +11,8 @@ export class Menu extends React.Component {
 
   render() {
 		return (
-			<body>
-	    	<header >
+		<div className="bd">
+	    	<header>
 	    		<div id="topleft">
 	    			<span></span>
 	    		</div>
@@ -33,7 +33,7 @@ export class Menu extends React.Component {
 	    		<div className="right" >
 					</div>
 	    	</main>
-	    	<footer >
+	    	<footer>
 	    		<div id="bottomleft">
 	    			<span></span>
 	    		</div>
@@ -41,7 +41,7 @@ export class Menu extends React.Component {
 	    			<span></span>
 	    		</div>
 	    	</footer>
-	    </body>
+	    </div>
 );
   }
 }

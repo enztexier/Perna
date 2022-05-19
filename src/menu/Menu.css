@@ -1,8 +1,7 @@
-body {
+.bd {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: yellow;
 }
 
 header {
@@ -84,7 +83,7 @@ footer {
   width: 87.8%;
   height: 10vh;
   z-index: 1;
-  background-color: red;
+  background-color: white;
   float: left;
 }
 
