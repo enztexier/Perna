@@ -6,14 +6,16 @@ import { useState } from "react";
 export class Menu extends React.Component {
 	constructor(props) {
     super(props);
-
+this.state = useState("whiteboard");
   }
-
+const changeStyle = () => {
+		setStyle("whiteboard2");
+	};
   render() {
 		return (
 		<div className="bd">
 	    	<header>
-	    		<div id="topleft">
+	    		<div id="topleft" onClick={this.changeStyle}>
 	    			<span></span>
 	    		</div>
 					<div id="topcenter">
