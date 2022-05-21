@@ -8,9 +8,18 @@ export class Menu extends React.Component {
     super(props);
 this.state = useState("whiteboard");
   }
-const changeStyle = () => {
+
+
+if(whiteboard =! whiteboard2){
+changeStyle = () => {
 		setStyle("whiteboard2");
 	};
+}
+if(whiteboard === whiteboard2){
+changeStyle = () => {
+		setStyle("whiteboard");
+	};
+}
   render() {
 		return (
 		<div className="bd">
