@@ -9,6 +9,15 @@ export class Menu extends React.Component {
 this.state = useState("whiteboard");
   }
 
+leftmove () {
+if (whiteboard === whiteboard2){
+changeStyle = () => {
+		setStyle("whiteboard2");
+                setStyle("whiteboard");
+	};
+
+}
+}
 
 if(whiteboard =! whiteboard2){
 changeStyle = () => {
@@ -24,7 +33,7 @@ changeStyle = () => {
 		return (
 		<div className="bd">
 	    	<header>
-	    		<div id="topleft" onClick={this.changeStyle}>
+	    		<div id="topleft" onClick={this.leftmove}>
 	    			<span></span>
 	    		</div>
 					<div id="topcenter">
