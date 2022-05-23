@@ -6,14 +6,34 @@ import { useState } from "react";
 export class Menu extends React.Component {
 	constructor(props) {
     super(props);
-		
+this.state = useState("whiteboard");
   }
 
+leftmove () {
+if (whiteboard === whiteboard2){
+changeStyle = () => {
+		setStyle("whiteboard2");
+                setStyle("whiteboard");
+	};
+
+}
+}
+
+if(whiteboard =! whiteboard2){
+changeStyle = () => {
+		setStyle("whiteboard2");
+	};
+}
+if(whiteboard === whiteboard2){
+changeStyle = () => {
+		setStyle("whiteboard");
+	};
+}
   render() {
 		return (
 		<div className="bd">
 	    	<header>
-	    		<div id="topleft">
+	    		<div id="topleft" onClick={this.leftmove}>
 	    			<span></span>
 	    		</div>
 					<div id="topcenter">
