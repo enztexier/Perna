@@ -6,29 +6,16 @@ import { useState } from "react";
 export class Menu extends React.Component {
 	constructor(props) {
     super(props);
-this.state = useState("whiteboard");
+this.state = { style : 'whiteboard'};
   }
 
 leftmove () {
-if (whiteboard === whiteboard2){
-changeStyle = () => {
-		setStyle("whiteboard2");
-                setStyle("whiteboard");
-	};
+
+		this.setState({ style: 'whiteboard2' });
+		//console.log("test")
 
 }
-}
 
-if(whiteboard =! whiteboard2){
-changeStyle = () => {
-		setStyle("whiteboard2");
-	};
-}
-if(whiteboard === whiteboard2){
-changeStyle = () => {
-		setStyle("whiteboard");
-	};
-}
   render() {
 		return (
 		<div className="bd">
@@ -46,7 +33,7 @@ changeStyle = () => {
 	    		<div className="left" categorie="" >
 					</div>
 	    		<div className="middle" >
-					<div >
+					<div className="style">
 
 		      </div>
 	    		</div>
