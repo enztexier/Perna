@@ -6,7 +6,8 @@ import { useState } from "react";
 export class Menu extends React.Component {
 	constructor(props) {
     super(props);
-this.state = { 	style : 'whiteboard'
+this.state = { 	style : 'whiteboard',
+							styleright : 'whiteboardright'
 };
   }
 
@@ -47,7 +48,9 @@ rightmove (props) {
 
   render() {
 		const {style} = this.state
+		const {styleright} = this.state
 		console.log({style})
+		console.log({styleright})
 
 
 		return (
