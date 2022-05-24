@@ -6,21 +6,54 @@ import { useState } from "react";
 export class Menu extends React.Component {
 	constructor(props) {
     super(props);
-this.state = { style : 'whiteboard'};
+this.state = { 	style : 'whiteboard'
+};
   }
 
-leftmove () {
+leftmove (props) {
 
-		this.setState({ style: 'whiteboard2' });
-		//console.log("test")
+
+		if (this.state.style === 'whiteboard' || 'whiteboardleftend'){
+			console.log('1er');
+			this.setState({ style: 'whiteboardleft' });
+			this.setState({ style: 'whiteboardleftend' });
+		}
+		else{
+			this.setState({ style: 'whiteboardleft' });
+			console.log('2eme');
+			//
+			//this.rightmove()
+		}
+		//this.setState({ style: 'whiteboardleftend' });
+		//console.log(props)
+		//console.log("leftmove")
+
+}
+
+rightmove (props) {
+
+
+		if (this.state.style === 'whiteboard' || ''){
+			this.setState({ style: 'whiteboardright' });
+			this.setState({ style: 'whiteboardrightend' });
+			console.log('3er');
+		}
+		else{
+			this.setState({ style: 'whiteboardright' });
+			console.log('4eme');
+		}
 
 }
 
   render() {
+		const {style} = this.state
+		console.log({style})
+
+
 		return (
 		<div className="bd">
 	    	<header>
-	    		<div id="topleft" onClick={this.leftmove}>
+	    		<div id="topleft">
 	    			<span></span>
 	    		</div>
 					<div id="topcenter">
@@ -30,14 +63,14 @@ leftmove () {
 	    		</div>
 	    	</header>
 	    	<main>
-	    		<div className="left" categorie="" >
+    		<div className="left" onClick={() => this.leftmove(this.state)} >
 					</div>
 	    		<div className="middle" >
-					<div className="style">
+					<div className={style}>
 
 		      </div>
 	    		</div>
-	    		<div className="right" >
+	    		<div className="right" onClick={() => this.rightmove(this.state)} >
 					</div>
 	    	</main>
 	    	<footer>
