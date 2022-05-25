@@ -13,7 +13,7 @@ this.state = { 	style : null
 leftmove (props) {
 
 
-		if (this.state.style === null || 'wbleftreverse' ){
+		if (this.state.style != 'wbleft' ){
 			console.log('1er');
 			console.log(this.state);
 			//this.setState({ style: 'whiteboardleft' });
