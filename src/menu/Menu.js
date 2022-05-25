@@ -6,21 +6,22 @@ import { useState } from "react";
 export class Menu extends React.Component {
 	constructor(props) {
     super(props);
-this.state = { 	style : 'whiteboard',
-							styleright : 'whiteboardright'
+this.state = { 	style : null
 };
   }
 
 leftmove (props) {
 
 
-		if (this.state.style === 'whiteboard' || 'whiteboardleftend'){
+		if (this.state.style === null || 'wbleftreverse' ){
 			console.log('1er');
-			this.setState({ style: 'whiteboardleft' });
-			this.setState({ style: 'whiteboardleftend' });
+			console.log(this.state);
+			//this.setState({ style: 'whiteboardleft' });
+			this.setState({ style: 'wbleft' });
+			//this.setState({ style: 'whiteboardleftend' });
 		}
 		else{
-			this.setState({ style: 'whiteboardleft' });
+			this.setState({ style: 'wbleftreverse' });
 			console.log('2eme');
 			//
 			//this.rightmove()
@@ -34,9 +35,9 @@ leftmove (props) {
 rightmove (props) {
 
 
-		if (this.state.style === 'whiteboard' || ''){
-			this.setState({ style: 'whiteboardright' });
-			this.setState({ style: 'whiteboardrightend' });
+		if (this.state.style === null ){
+			this.setState({ style: 'wbright' });
+			//this.setState({ style: 'whiteboardrightend' });
 			console.log('3er');
 		}
 		else{
@@ -48,9 +49,7 @@ rightmove (props) {
 
   render() {
 		const {style} = this.state
-		const {styleright} = this.state
-		console.log({style})
-		console.log({styleright})
+		//console.log({style})
 
 
 		return (
