@@ -13,11 +13,16 @@ this.state = { 	style : null
 leftmove (props) {
 
 
-		if (this.state.style != 'wbleft' ){
+	if (this.state.style === 'wbright'){
+		this.setState({ style: 'wbrightreverse' });
+		this.setState({ style: 'wbleft' });
+	}
+		else if (this.state.style != 'wbleft' ){
 			console.log('1er');
 			console.log(this.state);
 			//this.setState({ style: 'whiteboardleft' });
 			this.setState({ style: 'wbleft' });
+			console.log(this.state);
 			//this.setState({ style: 'whiteboardleftend' });
 		}
 		else{
@@ -35,16 +40,14 @@ leftmove (props) {
 rightmove (props) {
 
 
-		if (this.state.style === null ){
-			this.setState({ style: 'wbright' });
-			//this.setState({ style: 'whiteboardrightend' });
-			console.log('3er');
-		}
-		else{
-			this.setState({ style: 'whiteboardright' });
-			console.log('4eme');
-		}
-
+	if (this.state.style != 'wbright' ){
+		console.log('3eme');
+		this.setState({ style: 'wbright' });
+	}
+	else{
+		this.setState({ style: 'wbrightreverse' });
+		console.log('4eme');
+	}
 }
 
   render() {
@@ -54,7 +57,7 @@ rightmove (props) {
 
 		return (
 		<div className="bd">
-	    	<header>
+	    	<header onClick={() => this.leftmove(this.state)}>
 	    		<div id="topleft">
 	    			<span></span>
 	    		</div>
