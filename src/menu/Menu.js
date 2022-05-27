@@ -57,14 +57,14 @@ rightmove (props) {
 
 		return (
 		<div className="bd">
-	    	<header onClick={() => this.leftmove(this.state)}>
+	    	<header>
 	    		<div id="topleft">
-	    			<span></span>
+
 	    		</div>
 					<div id="topcenter">
+					<span></span>
 					</div>
 	    		<div id="topright">
-	    			<span></span>
 	    		</div>
 	    	</header>
 	    	<main>
@@ -80,10 +80,10 @@ rightmove (props) {
 	    	</main>
 	    	<footer>
 	    		<div id="bottomleft">
-	    			<span></span>
+
 	    		</div>
 	    		<div id="bottomright">
-	    			<span></span>
+
 	    		</div>
 	    	</footer>
 	    </div>
