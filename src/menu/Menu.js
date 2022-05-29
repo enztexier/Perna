@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.css'
-import { useState } from "react";
+
 
 
 export class Menu extends React.Component {
@@ -28,12 +28,11 @@ leftmove (props) {
 		else{
 			this.setState({ style: 'wbleftreverse' });
 			console.log('2eme');
-			//
 			//this.rightmove()
 		}
 		//this.setState({ style: 'whiteboardleftend' });
-		//console.log(props)
-		//console.log("leftmove")
+		console.log(props)
+		console.log("leftmove")
 
 }
 
@@ -59,10 +58,8 @@ rightmove (props) {
 		<div className="bd">
 	    	<header>
 	    		<div id="topleft">
-
 	    		</div>
 					<div id="topcenter">
-					<span></span>
 					</div>
 	    		<div id="topright">
 	    		</div>
