@@ -258,6 +258,7 @@ footer {
   border-left: 6px solid white;
   z-index: 1;
   background-color: green;
+  position: relative;
 }
 
 #topcenter{
@@ -266,5 +267,6 @@ footer {
   width: 88%;
   height: 50%;
   position: relative;
-  left: 6%;
+  left: 11vh;
+  float: left;
 }
