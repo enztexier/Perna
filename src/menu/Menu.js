@@ -57,15 +57,17 @@ rightmove (props) {
 
 		return (
 		<div className="bd">
-		/*
+
 	    	<header >
 	    		<div id="topleft" onClick={() => this.rightmove(this.state)}>
 	    		</div>
 
+					<div className="box">
+					</div>
+
 	    		<div id="topright">
 	    		</div>
 	    	</header>
-				*/
 	    	<main>
     		<div className="left" onClick={() => this.leftmove(this.state)} >
 					</div>
