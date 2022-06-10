@@ -61,10 +61,8 @@ rightmove (props) {
 	    	<header >
 	    		<div id="topleft" onClick={() => this.rightmove(this.state)}>
 	    		</div>
-
 					<div className="box">
 					</div>
-
 	    		<div id="topright">
 	    		</div>
 	    	</header>
@@ -81,10 +79,8 @@ rightmove (props) {
 	    	</main>
 	    	<footer>
 	    		<div id="bottomleft">
-
 	    		</div>
 	    		<div id="bottomright">
-
 	    		</div>
 	    	</footer>
 	    </div>
