@@ -4,11 +4,13 @@
   min-height: 100vh;
 }
 
+/*
 header {
   flex: 0 0 10%;
   border-bottom: 6px solid white;
   z-index: 1;
 }
+*/
 
 main {
   flex: 1;
